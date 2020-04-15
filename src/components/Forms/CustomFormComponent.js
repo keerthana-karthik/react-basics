@@ -3,6 +3,7 @@ import FormElementComponent from "./FormElement/FormElementComponent";
 import ButtonComponent from "./Button/ButtonComponent";
 import CustomFormState from "./CustomFormState";
 import FormsHelper from "./FormsHelper";
+import indexclasses from "../../index.css";
 
 class CustomFormComponent extends Component {
   state = CustomFormState;
@@ -83,10 +84,14 @@ class CustomFormComponent extends Component {
       </form>
     );
     return (
-      <div>
-        <h4>Enter your Data</h4>
-        {form}
+      <div className={indexclasses.ContainerCol2}>
+        <div className={indexclasses.Box}>
+          <h4>Enter your Data</h4>
+          {form}
+        </div>
+        <div className={indexclasses.Box}></div>
       </div>
+
     );
   }
 }
