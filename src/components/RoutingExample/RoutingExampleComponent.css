@@ -1,0 +1,20 @@
+  .Container {
+    margin: 16px;
+    text-align: left;
+  }
+  
+  .ContainerCol105040 {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+  }
+  .Box {
+    border: 1px solid black;
+    box-shadow: 5px 10px #ddd;
+    margin: 10px;
+    padding: 5px;
+  }
+  .UlAsSideBar {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0px;
+  }

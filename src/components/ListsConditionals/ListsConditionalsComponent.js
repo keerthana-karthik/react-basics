@@ -23,9 +23,11 @@ class ListsConditionalsComponent extends Component {
     render() {
         let lengthInfo = null;
         let clickText = null;
+        let section2Class = null;
         if (this.state.inputLength > 0) {
             lengthInfo = <p>Length: {this.state.inputLength}</p>;
             clickText = <h5>Click to delete</h5>;
+            section2Class = listsConditionalsClasses.Box;
         }
         const charList = this.state.inputText.split('').map((txt, index) => {
             return <CharComponent charValue={txt} clicked={() => { this.deleteOnClick(index) }}></CharComponent>;
@@ -47,7 +49,7 @@ class ListsConditionalsComponent extends Component {
                             <ListsConditionalsValidationComponent inputLength={this.state.inputLength}></ListsConditionalsValidationComponent>
                         </div>
                     </div>
-                    <div className={listsConditionalsClasses.Box}>
+                    <div className={section2Class}>
                         <div className={listsConditionalsClasses.margin10}>
                             {clickText}
                             {charList}
