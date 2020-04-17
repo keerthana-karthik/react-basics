@@ -6,6 +6,7 @@ import CustomFormComponent from "../Forms/CustomFormComponent";
 import BasicSyntaxComponent from "../BasicSyntax/BasicSyntaxComponent";
 import ListsConditionalsComponent from "../ListsConditionals/ListsConditionalsComponent";
 import RoutingExampleComponent from "../RoutingExample/RoutingExampleComponent";
+import ReduxCounterExampleComponent from "../ReduxCounterExample/ReduxCounterExampleComponent";
 import PageNotFoundComponent from "../PageNotFound/PageNotFoundComponent";
 
 class HomeComponent extends Component {
@@ -25,6 +26,9 @@ class HomeComponent extends Component {
           <NavLink to="/form" className={homeclasses.Content} activeClassName={homeclasses.active}>
             Form
           </NavLink>
+          <NavLink to="/reduxexample" className={homeclasses.Content} activeClassName={homeclasses.active}>
+            Redux Example
+          </NavLink>
         </div>
 
         <Switch>
@@ -32,6 +36,7 @@ class HomeComponent extends Component {
           <Route path="/basicsyntax" exact component={BasicSyntaxComponent} />
           <Route path="/listsconditionals" exact component={ListsConditionalsComponent} />
           <Route path="/routingexample" component={RoutingExampleComponent} />
+          <Route path="/reduxexample" component={ReduxCounterExampleComponent} />
           <Redirect from="/home" to="/basicsyntax" />
           <Route component={PageNotFoundComponent} />
         </Switch>

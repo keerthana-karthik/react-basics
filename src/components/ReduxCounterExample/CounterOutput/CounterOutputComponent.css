@@ -1,0 +1,26 @@
+.Container {
+  margin: 16px;
+  text-align: left;
+}
+
+.ContainerCol303040 {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+}
+
+.Box {
+  border: 1px solid black;
+  box-shadow: 5px 10px #ddd;
+  margin: 10px;
+  padding: 5px;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+.inputBox {
+  padding: 2px;
+  font-size: 14px;
+  margin-left: 10px;
+}
