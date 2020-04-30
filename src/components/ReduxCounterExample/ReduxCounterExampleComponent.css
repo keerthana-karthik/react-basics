@@ -27,3 +27,13 @@
     font-size: 14px;
     margin-right: 10px;
   }
+  @media(max-width: 940px) {
+    .ContainerCol25 {
+    grid-template-columns: 50% 50%;
+    }
+  }
+  @media(max-width: 550px) {
+    .ContainerCol25 {
+    grid-template-columns: 100%;
+    }
+  }

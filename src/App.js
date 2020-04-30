@@ -7,14 +7,10 @@ import { BrowserRouter } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/react-basics">
         <div className={appclasses.App}>
-          <header className={appclasses.AppHeader}>
-            <img src={logo} className={appclasses.AppLogo} alt="logo" />
-            <h1 className={appclasses.AppTitle}>Welcome to React</h1>
-          </header>
-          {
-          <HomeComponent></HomeComponent>}
+          
+          <HomeComponent></HomeComponent>
         </div>
       </BrowserRouter>
     );

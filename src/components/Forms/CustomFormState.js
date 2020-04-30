@@ -17,6 +17,7 @@ const CustomFormState = {
       elementType: "select",
       elementConfig: {
         options: [
+          { value: "null", displayValue: "Select One" },
           { value: "1", displayValue: "One" },
           { value: "2", displayValue: "Two" },
           { value: "3", displayValue: "Three" }

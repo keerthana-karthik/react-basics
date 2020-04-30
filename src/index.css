@@ -3,6 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.ContainerCol303040 {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+}
 .ContainerCol1090 {
   display: grid;
   grid-template-columns: 10% 90%;

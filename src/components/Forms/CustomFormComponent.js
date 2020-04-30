@@ -4,6 +4,7 @@ import ButtonComponent from "./Button/ButtonComponent";
 import CustomFormState from "./CustomFormState";
 import FormsHelper from "./FormsHelper";
 import indexclasses from "../../index.css";
+import customFormClasses from "./CustomFormComponent.css";
 
 class CustomFormComponent extends Component {
   state = CustomFormState;
@@ -84,12 +85,37 @@ class CustomFormComponent extends Component {
       </form>
     );
     return (
-      <div className={indexclasses.ContainerCol2}>
+      <div className={customFormClasses.ContainerCol303040}>
         <div className={indexclasses.Box}>
           <h4>Enter your Data</h4>
           {form}
         </div>
-        <div className={indexclasses.Box}></div>
+        <div className={indexclasses.Box}>
+        <h4>Entered Form Data</h4>
+        <pre>
+          <div className={indexclasses.Box}>
+            TextBox Value: {this.state.customFormData.textbox_1.value}
+          </div>
+          <div className={indexclasses.Box}>
+            SelectBox Value: {this.state.customFormData.selectbox_1.value}
+          </div>
+          <div className={indexclasses.Box}>
+            Checkbox Value: {(this.state.customFormData.checkbox_1.checked)? 'Checked': "Not Checked"}
+          </div>
+          <div className={indexclasses.Box}>
+            Radio Button Value: {this.state.customFormData.radiobutton_1.value}
+          </div>
+        </pre>
+        </div>
+        <div className={indexclasses.Box}>
+          <ol style={{ textAlign: 'left' }}>
+            <li>Form with basic form elements textbox, selectbox, checkbox, radio button</li>
+            <li>Add validation on text box</li>
+            <li>Use state object to dynamically create form</li>
+            <li>Use state and apply styling to invalid textbox</li>
+            <li>Enable and disable submit button based on form status</li>
+          </ol>
+        </div>
       </div>
 
     );
