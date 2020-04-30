@@ -35,7 +35,7 @@ class ReduxCounterExampleComponent extends Component {
                         </div>
                         <div className={reduxCounterExampleClasses.Box}>
                             <div className={reduxCounterExampleClasses.margin10}>
-                                <CounterInputComponent actionTypeLabel="Set To Value" updateTotal={(val) => this.props.onResetValue(val)} ></CounterInputComponent>
+                                <CounterInputComponent actionTypeLabel="Reset" updateTotal={(val) => this.props.onResetValue(val)} ></CounterInputComponent>
                             </div>
                         </div>
                     </div>

@@ -30,7 +30,9 @@
     list-style: none;
     margin-right: 1rem;
 }
-
+.NavbarLink {
+    color: #fff;
+}
 
 .NavLi a {
     font-size: 1rem;

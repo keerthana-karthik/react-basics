@@ -58,7 +58,7 @@ class HomeComponent extends Component {
               <span className={navBarClasses.ToggleBar}></span>
               <span className={navBarClasses.ToggleBar}></span>
             </button>
-            React
+            <a href="https://github.com/keerthana-karthik/react-basics/tree/master/src" className={navBarClasses.NavbarLink}>React Code</a>
           </div>
           <div className={navBarClasses.TopNavbar}>
             <ul className={navBarClasses.NavUl}>
