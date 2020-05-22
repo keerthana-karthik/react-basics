@@ -4,7 +4,7 @@ const UserOutputComponent = (props) => {
         return(
             <div>
                 <p>
-                 Output "username" : {props.username}
+                 Output "username" : <b test-attr="outputUsername">{props.username}</b>
                 </p>
             </div>
         );

@@ -34,3 +34,9 @@ body {
 .textAlignLeft {
   text-align: left;
 }
+
+.renderError {
+  margin: 10px;
+  padding: 5px;
+  color: red;
+}

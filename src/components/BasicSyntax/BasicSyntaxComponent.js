@@ -17,7 +17,7 @@ class BasicSyntaxComponent extends Component {
           <div className={basicSyntaxClasses.Box}>
             <UserInputComponent changed={this.userChangeHandler} currentUserName={this.state.username}></UserInputComponent>
           </div>
-          <div className={basicSyntaxClasses.Box}>
+          <div className={basicSyntaxClasses.Box} test-attr="UserOutputComponentWrapper">
             <UserOutputComponent username={this.state.username}></UserOutputComponent>
             <UserOutputComponent username={this.state.username}></UserOutputComponent>
             <UserOutputComponent username="Hard Coded Value 1"></UserOutputComponent>

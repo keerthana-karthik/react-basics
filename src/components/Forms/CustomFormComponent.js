@@ -62,9 +62,10 @@ class CustomFormComponent extends Component {
     }
     let form = (
       <form onSubmit={this.submitHandler}>
-        {formElementsArray.map(formElement => (
+        {formElementsArray.map((formElement, index) => (
           <FormElementComponent
             key={formElement.id}
+            testAttr={formElement.id}
             elementType={formElement.config.elementType}
             elementConfig={formElement.config.elementConfig}
             value={formElement.config.value}

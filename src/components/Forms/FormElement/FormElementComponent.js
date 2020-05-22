@@ -13,6 +13,8 @@ const FormElementComponent = props => {
     case "input":
       formElement = (
         <input
+          key={"input"+props.testAttr}
+          test-attr={props.testAttr}
           className={inputClasses.join(" ")}
           {...props.elementConfig}
           value={props.value}
@@ -23,6 +25,8 @@ const FormElementComponent = props => {
     case "textarea":
       formElement = (
         <textarea
+          key={"textarea"+props.testAttr}
+          test-attr={props.testAttr}
           className={inputClasses.join(" ")}
           {...props.elementConfig}
           value={props.value}
@@ -32,8 +36,8 @@ const FormElementComponent = props => {
       break;
     case "checkbox":
       formElement = (
-        <div className={indexclasses.ContainerCol1090}>
-          <input type="checkbox" value={props.value} onChange={props.changed} />
+        <div key={"checkbox"+props.testAttr} className={indexclasses.ContainerCol1090}>
+          <input test-attr={props.testAttr} type="checkbox" value={props.value} onChange={props.changed} />
           <label className={indexclasses.textAlignLeft}>
             {props.elementConfig.label}
           </label>
@@ -42,10 +46,11 @@ const FormElementComponent = props => {
       break;
     case "radiobutton":
       let radioname = props.elementConfig.elementName;
-      formElement = props.elementConfig.options.map(option => (
-        <div className={indexclasses.ContainerCol1090}>
+      formElement = props.elementConfig.options.map((option, index) => (
+        <div key={"radiobutton"+props.testAttr+index} className={indexclasses.ContainerCol1090}>
           <input
             type="radio"
+            test-attr={props.testAttr+'_'+index}
             name={radioname}
             value={option.value}
             onChange={props.changed}
@@ -58,7 +63,8 @@ const FormElementComponent = props => {
       break;
     case "select":
       formElement = (
-        <select
+        <select key={"select"+props.testAttr}
+         test-attr={props.testAttr}
           className={inputClasses.join(" ")}
           value={props.value}
           onChange={props.changed}
