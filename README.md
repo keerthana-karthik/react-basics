@@ -2,6 +2,7 @@ Basics of React
 ===================
 
 React basic concepts in one place with [Demo](https://react-basics-62cb2.web.app/)
+Covering Props, State, List, Conditions, Routing, Form and Custom Form Elements, Redux.
 
 ---------------
 Running the app
